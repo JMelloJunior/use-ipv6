@@ -32,9 +32,11 @@ def gerar_token(terminal_id):
 
 if __name__ == '__main__':
     import os
-    port = int(os.environ.get('PORT', 5000))
+    #port = int(os.environ.get('PORT', 5000))
     print(f"Servidor rodando na porta: {port}")
-    app.run(host='0.0.0.0', port=port, debug=False)
+    #app.run(host='0.0.0.0', port=port, debug=False)
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)
 
 
 
